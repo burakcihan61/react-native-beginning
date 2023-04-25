@@ -1,20 +1,17 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet} from 'react-native';
-import Card from './components/Card';
+import {FlatList, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+
 const App: React.FC = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <Card name="Burak Cihan" title="Lorem ipsum bla bla bla" />
-      <Card name="Berat Cihan" title="Lorem ipsum bla bla bla" />
-      <Card name="Fuat Cihan" title="Lorem ipsum bla bla bla" />
+    <SafeAreaView>
+      <View>
+        <FlatList
+          data={[1, 2, 3, 4, 5]}
+          renderItem={data => <Text>{data.item}</Text>}
+        />
+      </View>
     </SafeAreaView>
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#e0e0e0',
-  },
-});
 export default App;
