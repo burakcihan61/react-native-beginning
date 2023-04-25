@@ -5,7 +5,7 @@ import NewsCard from './components/NewsCard';
 
 const App: React.FC = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <View>
         <FlatList
           data={news_data}
@@ -15,5 +15,12 @@ const App: React.FC = () => {
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#eceff1',
+  },
+});
 
 export default App;
