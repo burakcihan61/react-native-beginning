@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, TouchableOpacity, View} from 'react-native';
+import {Alert, Text, TouchableOpacity, View} from 'react-native';
 import styles from './Card.style';
 
 type TProps = {
@@ -14,7 +14,9 @@ const Card: React.FC<TProps> = (props: TProps) => {
         <Text style={styles.title}>{props.name}</Text>
         <Text style={styles.text}>{props.title}</Text>
       </View>
-      <TouchableOpacity style={styles.button_container}>
+      <TouchableOpacity
+        style={styles.button_container}
+        onPress={() => Alert.alert('Hello ' + props.name)}>
         <Text style={styles.button_title}>I Like</Text>
       </TouchableOpacity>
     </View>
