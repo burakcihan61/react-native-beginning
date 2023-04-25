@@ -8,6 +8,7 @@ const App = () => {
       <View style={styles.box2} />
       <View style={styles.box3} />
       <View style={styles.box4} />
+      <View style={styles.box5} />
     </SafeAreaView>
   );
 };
@@ -37,6 +38,11 @@ const styles = StyleSheet.create({
     width: 75,
     height: 75,
     backgroundColor: 'orange',
+  },
+  box5: {
+    width: 75,
+    height: 75,
+    backgroundColor: 'purple',
   },
 });
 export default App;
