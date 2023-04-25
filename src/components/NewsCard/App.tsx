@@ -9,9 +9,9 @@ import {
   Text,
   View,
 } from 'react-native';
-import news_data from './news_data.json';
-import news_banner from './news_banner_data.json';
-import NewsCard from './components/NewsCard';
+import news_data from '../../news_data.json';
+import news_banner from '../../news_banner_data.json';
+import NewsCard from './NewsCard';
 import ScrollView = Animated.ScrollView;
 
 type TProps = {
