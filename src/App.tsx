@@ -1,7 +1,7 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 import Card from './components/Card';
-const App = () => {
+const App: React.FC = () => {
   return (
     <SafeAreaView style={styles.container}>
       <Card name="Burak Cihan" title="Lorem ipsum bla bla bla" />
