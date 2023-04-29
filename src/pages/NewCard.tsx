@@ -9,9 +9,9 @@ import {
   Text,
   View,
 } from 'react-native';
-import news_data from '../../news_data.json';
-import news_banner from '../../news_banner_data.json';
-import NewsCard from './NewsCard';
+import news_data from '../news_data.json';
+import news_banner from '../news_banner_data.json';
+import NewsCard from '../components/NewsCard/NewsCard';
 import ScrollView = Animated.ScrollView;
 
 type TProps = {
@@ -23,7 +23,7 @@ type TProps = {
     u_id: string | number;
   };
 };
-const App: React.FC = () => {
+const NewCard: React.FC = () => {
   const renderNews = ({item}: TProps) => {
     return <NewsCard news={item} />;
   };
@@ -74,4 +74,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default NewCard;
